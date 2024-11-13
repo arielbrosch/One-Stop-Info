@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Weather Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007acc;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007acc;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f4f4f4;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Emergency Weather Hub</h1>
+    <p>Your one-stop resource for disaster preparedness and weather updates in Cleveland, Ohio.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Current Weather Map</h2>
+        <!-- Embed Weather.gov Radar Map -->
+        <iframe
+            src="https://radar.weather.gov/?settings=v1_eyJpbnRlcmZhY2UiOiJnZW5lcmFsIiwic2F0ZWxsaXRlIjp7ImVuYWJsZWQiOnRydWV9fQ=="
+            title="Weather Radar from Weather.gov">
+        </iframe>
+        <p>Explore real-time weather radar maps directly from <a href="https://www.weather.gov/" target="_blank">Weather.gov</a>.</p>
+    </section>
+
+    <section>
+        <h2>Weather Resources</h2>
+        <ul>
+            <li><a href="https://www.weather.gov/" target="_blank">National Weather Service (NWS)</a></li>
+            <li><a href="https://www.news5cleveland.com/weather" target="_blank">News 5 Cleveland Weather</a></li>
+            <li><a href="https://www.spc.noaa.gov/" target="_blank">Storm Prediction Center (SPC)</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Disaster Preparedness Tips for Weather Events</h2>
+
+        <h3>Tornado</h3>
+        <ul>
+            <li><strong>Shelter-in-Place:</strong> Go to a basement or interior, windowless room; cover yourself with sturdy furniture or a mattress.</li>
+            <li><strong>Safe Zones:</strong> Avoid windows, exterior walls, and mobile homes. Seek a designated storm shelter if possible.</li>
+        </ul>
+
+        <h3>Flood</h3>
+        <ul>
+            <li><strong>Evacuation:</strong> Follow official orders, know evacuation routes, and avoid floodwaters.</li>
+            <li><strong>Safety:</strong> Stay away from water (it may be contaminated or have debris) and avoid downed power lines.</li>
+            <li><strong>Water Use:</strong> Boil or use bottled water until declared safe.</li>
+        </ul>
+
+        <h3>Winter Storm</h3>
+        <ul>
+            <li><strong>Staying Warm:</strong> Layer clothing, use blankets, and cover exposed skin.</li>
+            <li><strong>Emergency Kit:</strong> Include food, water, flashlight, batteries, first aid, and a shovel.</li>
+            <li><strong>Avoid Frostbite:</strong> Watch for numbness or shivering; warm affected areas and seek help if severe.</li>
+        </ul>
+
+        <h3>Heatwave</h3>
+        <ul>
+            <li><strong>Prevent Heatstroke:</strong> Stay in cool areas, avoid peak heat hours, and limit outdoor activity.</li>
+            <li><strong>Hydration:</strong> Drink water often; avoid alcohol and caffeine.</li>
+            <li><strong>Cooling Centers:</strong> Know nearby cooling center locations for relief.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
