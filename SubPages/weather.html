@@ -25,7 +25,11 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
+        h1 {
+            color: white;
+        } 
+        
+        h2 {
             color: #007acc;
         }
         section {
@@ -67,12 +71,15 @@
 <main>
     <section>
         <h2>Current Weather Map</h2>
-        <!-- Embed Weather.gov Radar Map -->
+        <!-- Embed Windy.com Weather Map for Cleveland -->
         <iframe
-            src="https://radar.weather.gov/?settings=v1_eyJpbnRlcmZhY2UiOiJnZW5lcmFsIiwic2F0ZWxsaXRlIjp7ImVuYWJsZWQiOnRydWV9fQ=="
-            title="Weather Radar from Weather.gov">
+            src="https://embed.windy.com/embed2.html?lat=41.505&lon=-81.691&zoom=10&level=surface&overlay=rain&menu=&message=true&marker=true&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=41.505&detailLon=-81.691&metricWind=default&metricTemp=default&radarRange=-1"
+            title="Windy Weather Map of Cleveland, OH"
+            width="100%"
+            height="600"
+            frameborder="0">
         </iframe>
-        <p>Explore real-time weather radar maps directly from <a href="https://www.weather.gov/" target="_blank">Weather.gov</a>.</p>
+        <p>Explore live weather data directly from <a href="https://www.windy.com/" target="_blank">Windy.com</a>.</p>
     </section>
 
     <section>
@@ -117,3 +124,8 @@
 </main>
 
 <footer>
+    <p>© 2024 Emergency Weather Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
