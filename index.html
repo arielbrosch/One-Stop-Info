@@ -7,17 +7,9 @@
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
-
+<body>
   <div class="jumbotron">
     <h1>One Stop INFO</h1>
-    <!-- Search Bar -->
-    <!-- <div class="search-bar">
-      <form action="search_results.html" method="GET">
-        <input type="text" name="query" placeholder="Search One Stop INFO..." required />
-        <button type="submit">Search</button>
-      </form>
-    </div> -->
 
     <div class="search-bar">
         <form id="searchForm">
@@ -25,10 +17,11 @@
             <button type="submit">Search</button>
         </form>
     </div>
-    
+
     <!-- Add a section for search results -->
     <div id="searchResults" style="margin-top: 20px;"></div>
-
+  
+    
       <a href="SubPages/how_to.html">HowTo</a>
       <a href="SubPages/shelter.html">Shelters</a>
       <a href="SubPages/traffic.html">Traffic</a>
@@ -38,13 +31,23 @@
     <script src="script.js"></script>
   </div>
 
-
   <div class="center">
-    <iframe src="SubPages/how_to.html" height="400" width="500"></iframe>
-    <iframe src="SubPages/shelter.html" height="400" width="500"></iframe>
-    <iframe src="SubPages/traffic.html" height="400" width="500"></iframe>
-    <iframe src="SubPages/weather.html" height="400" width="500"></iframe>
+    <p>Bringing you all needed information for your emergencies and questions.</p>
+    <iframe src="govpost.html" height="400" width="800"></iframe>
+    <iframe
+        src="https://embed.windy.com/embed2.html?lat=41.505&lon=-81.691&zoom=10&level=surface&overlay=rain&menu=&message=true&marker=true&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=41.505&detailLon=-81.691&metricWind=default&metricTemp=default&radarRange=-1"
+        title="Windy Weather Map of Cleveland, OH"
+        height="400"
+        width="800">
+    </iframe>
+    <iframe src="https://ohgo.com/clevelandlt=41.49365795&ln=-81.68343365&z=14&ls=incident,construction" height="500" width="1000"></iframe>
+
+  </div>
+  <div id="firstAid">
+    <h2>Performing CPR</h2>
   </div>
 </body>
-
+<footer>
+  <p>© 2024 One Stop INFO. All rights reserved.</p>
+</footer>
 </html>
